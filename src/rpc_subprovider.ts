@@ -1,9 +1,15 @@
 import { assert } from '@0x/assert';
 import { Callback, ErrorCallback, Subprovider } from '@0x/subproviders';
 import { StatusCodes } from '@0x/types';
-import { fetchAsync } from '@0x/utils';
 import { JSONRPCRequestPayload } from 'ethereum-types';
+import * as http from 'http';
+import * as https from 'https';
 import JsonRpcError = require('json-rpc-error');
+import fetch, { Headers, Response } from 'node-fetch';
+
+const httpAgent = new http.Agent({ keepAlive: true });
+const httpsAgent = new https.Agent({ keepAlive: true });
+const agent = (_parsedURL: any) => (_parsedURL.protocol === 'http:' ? httpAgent : httpsAgent);
 
 /**
  * This class implements the [web3-provider-engine](https://github.com/MetaMask/provider-engine) subprovider interface.
@@ -44,16 +50,13 @@ export class RPCSubprovider extends Subprovider {
         let response: Response;
         const rpcUrl = this._rpcUrls[Math.floor(Math.random() * this._rpcUrls.length)];
         try {
-            response = await fetchAsync(
-                rpcUrl,
-                {
-                    method: 'POST',
-                    headers,
-                    body: JSON.stringify(finalPayload),
-                    keepalive: true,
-                },
-                this._requestTimeoutMs,
-            );
+            response = await fetch(rpcUrl, {
+                method: 'POST',
+                headers,
+                body: JSON.stringify(finalPayload),
+                timeout: this._requestTimeoutMs,
+                agent,
+            });
         } catch (err) {
             end(new JsonRpcError.InternalError(err));
             return;
