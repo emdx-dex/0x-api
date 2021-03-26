@@ -146,7 +146,7 @@ describe(SUITE_NAME, () => {
             });
         });
     });
-    describe('/orders', () => {
+    describe('GET /orders', () => {
         it('should return empty response when no orders', async () => {
             const response = await httpGetAsync({ app, route: `${SRA_PATH}/orders` });
 
@@ -431,6 +431,38 @@ describe(SUITE_NAME, () => {
             const response = await httpPostAsync({
                 app,
                 route: `${SRA_PATH}/order`,
+                body: {
+                    ...order,
+                },
+            });
+            expect(response.status).to.eq(HttpStatus.OK);
+            const meshOrders = await meshUtils.getOrdersAsync();
+            expect(meshOrders.ordersInfos.find(info => info.hash === orderHash)).to.not.be.undefined();
+        });
+        it.only('should skip validation when ?skipValidation=true', async () => {
+            const limitOrder = getRandomLimitOrder({
+                maker: makerAddress,
+                makerToken: ZRX_TOKEN_ADDRESS,
+                takerToken: WETH_TOKEN_ADDRESS,
+                makerAmount: MAX_MINT_AMOUNT,
+                // tslint:disable:custom-no-magic-numbers
+                takerAmount: ONE_THOUSAND_IN_BASE.multipliedBy(3),
+                chainId: CHAIN_ID,
+                expiry: TOMORROW,
+            });
+
+            const signature = limitOrder.getSignatureWithKey(privateKey);
+
+            const orderHash = limitOrder.getHash();
+
+            const order = {
+                ...limitOrder,
+                signature,
+            };
+
+            const response = await httpPostAsync({
+                app,
+                route: `${SRA_PATH}/order?skipValidation=true`,
                 body: {
                     ...order,
                 },
