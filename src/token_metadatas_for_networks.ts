@@ -11,6 +11,8 @@ export interface TokenMetadataAndChainAddresses {
         [ChainId.Mainnet]: string;
         [ChainId.Kovan]: string;
         [ChainId.Ganache]: string;
+        [ChainId.AvaxMainnet]: string;
+        [ChainId.AvaxFuji]: string;
     };
 }
 

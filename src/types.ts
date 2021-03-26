@@ -369,6 +369,8 @@ export enum ChainId {
     Mainnet = 1,
     Kovan = 42,
     Ganache = 1337,
+    AvaxMainnet = 43114,
+    AvaxFuji = 43113,
 }
 
 export interface TokenMetadata {
