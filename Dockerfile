@@ -2,6 +2,7 @@
 FROM node:12-alpine as yarn-install
 WORKDIR /usr/src/app
 # Install app dependencies
+COPY emdx/ ./emdx
 COPY package.json yarn.lock ./
 RUN apk update && \
     apk upgrade && \

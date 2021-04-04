@@ -127,7 +127,7 @@
     },
     "dependencies": {
         "@0x/assert": "^3.0.17",
-        "@0x/asset-swapper": "^5.8.0",
+        "@0x/asset-swapper": "file:./emdx/asset-swapper",
         "@0x/base-contract": "^6.2.11",
         "@0x/connect": "^6.0.4",
         "@0x/contract-addresses": "file:./emdx/contract-addresses",
