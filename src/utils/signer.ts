@@ -1,4 +1,4 @@
-import { TxData } from '@0x/contract-wrappers';
+import { TxData } from '@emdx-dex/contract-wrappers';
 import { SupportedProvider, Web3Wrapper } from '@0x/dev-utils';
 import { PrivateKeyWalletSubprovider, Web3ProviderEngine } from '@0x/subproviders';
 import { BigNumber, providerUtils } from '@0x/utils';

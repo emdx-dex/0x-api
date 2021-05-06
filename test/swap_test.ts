@@ -1,5 +1,5 @@
 import { ERC20BridgeSource } from '@0x/asset-swapper';
-import { WETH9Contract } from '@0x/contract-wrappers';
+import { WETH9Contract } from '@emdx-dex/contract-wrappers';
 import { DummyERC20TokenContract } from '@0x/contracts-erc20';
 import { assertRoughlyEquals, expect, getRandomInteger, randomAddress } from '@0x/contracts-test-utils';
 import { BlockchainLifecycle, web3Factory, Web3ProviderEngine } from '@0x/dev-utils';

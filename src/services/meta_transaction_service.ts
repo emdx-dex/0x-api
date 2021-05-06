@@ -1,6 +1,6 @@
 import { ContractTxFunctionObj, QuoteReport } from '@0x/asset-swapper';
 import { ContractAddresses } from '@emdx-dex/contract-addresses';
-import { ContractWrappers } from '@0x/contract-wrappers';
+import { ContractWrappers } from '@emdx-dex/contract-wrappers';
 import {
     assetDataUtils,
     decodeFillQuoteTransformerData,

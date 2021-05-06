@@ -159,20 +159,6 @@
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/@0x/contract-addresses/-/contract-addresses-5.9.0.tgz#75acddea81b2c3400dc83ae07a300996989ba7cf"
 
-"@0x/contract-wrappers@^13.10.2":
-  version "13.10.2"
-  resolved "https://registry.yarnpkg.com/@0x/contract-wrappers/-/contract-wrappers-13.10.2.tgz#34ed6a3e828fc0f35826b86412c3fb11c468a248"
-  dependencies:
-    "@0x/assert" "^3.0.19"
-    "@0x/base-contract" "^6.2.13"
-    "@0x/contract-addresses" "^5.5.0"
-    "@0x/json-schemas" "^5.3.4"
-    "@0x/types" "^3.3.1"
-    "@0x/utils" "^6.1.1"
-    "@0x/web3-wrapper" "^7.2.10"
-    ethereum-types "^3.4.0"
-    ethers "~4.0.4"
-
 "@0x/contract-wrappers@^13.11.0":
   version "13.11.0"
   resolved "https://registry.yarnpkg.com/@0x/contract-wrappers/-/contract-wrappers-13.11.0.tgz#7b0940e8cbf0e0b863fcdd3d0de3b345f76c7449"
@@ -1217,10 +1203,30 @@
     web3 "1.2.1"
     web3-typescript-typings "^0.10.2"
 
+"@emdx-dex/contract-addresses@^5.5.0-8":
+  version "5.5.0-8"
+  resolved "https://registry.yarnpkg.com/@emdx-dex/contract-addresses/-/contract-addresses-5.5.0-8.tgz#e852a4966534b2a299821783be32ab6c61e50e31"
+  integrity sha512-1vthV1n9fipewAZs+P7VTtpzxB7ns61f/oqbH+nBmAr564ZKD7q1ahO3mcIm+LLJ8BNkAN3K6POAoF7xZTS82g==
+
 "@emdx-dex/contract-addresses@^5.8.0-8":
   version "5.8.0-8"
   resolved "https://registry.yarnpkg.com/@emdx-dex/contract-addresses/-/contract-addresses-5.8.0-8.tgz#f4a22b1a274e5b216fb77b4c413f54cee3357f4b"
   integrity sha512-+xQaCjUYrgLY04wGeTk4waFojfUQ51Nt70KO0kApqz35hY/oOJqkY5t4pPCkmAAcRZj9D/qvTvpj48dZ07rnzQ==
+
+"@emdx-dex/contract-wrappers@^13.10.2-8":
+  version "13.10.2-8"
+  resolved "https://registry.yarnpkg.com/@emdx-dex/contract-wrappers/-/contract-wrappers-13.10.2-8.tgz#d0afd165f46fa4753dcbec238e7be1a053129421"
+  integrity sha512-KR/KkG8bVAV0Ehm/vp6MjV1PE6tSdLo+NnRcfcDVEHFtfRSpBwhLj1UzybTgSQo9OIVWMMowCg89lpiq66uM8w==
+  dependencies:
+    "@0x/assert" "^3.0.19"
+    "@0x/base-contract" "^6.2.13"
+    "@0x/json-schemas" "^5.3.4"
+    "@0x/types" "^3.3.1"
+    "@0x/utils" "^6.1.1"
+    "@0x/web3-wrapper" "^7.2.10"
+    "@emdx-dex/contract-addresses" "^5.5.0-8"
+    ethereum-types "^3.4.0"
+    ethers "~4.0.4"
 
 "@ethersproject/abi@5.0.0-beta.153":
   version "5.0.0-beta.153"

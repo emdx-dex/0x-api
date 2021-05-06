@@ -1,4 +1,4 @@
-import { ContractWrappers } from '@0x/contract-wrappers';
+import { ContractWrappers } from '@emdx-dex/contract-wrappers';
 import { BigNumber, intervalUtils } from '@0x/utils';
 import { Web3Wrapper } from '@0x/web3-wrapper';
 import { Counter, Gauge, Summary } from 'prom-client';

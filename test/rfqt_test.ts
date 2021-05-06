@@ -2,7 +2,7 @@
 import { ERC20BridgeSource, rfqtMocker, SignedOrder } from '@0x/asset-swapper';
 import { quoteRequestorHttpClient } from '@0x/asset-swapper/lib/src/utils/quote_requestor';
 import { ContractAddresses } from '@emdx-dex/contract-addresses';
-import { WETH9Contract } from '@0x/contract-wrappers';
+import { WETH9Contract } from '@emdx-dex/contract-wrappers';
 import { DummyERC20TokenContract } from '@0x/contracts-erc20';
 import { expect } from '@0x/contracts-test-utils';
 import { BlockchainLifecycle, web3Factory } from '@0x/dev-utils';
