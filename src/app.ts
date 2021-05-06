@@ -11,7 +11,7 @@ import {
     RfqtFirmQuoteValidator,
     SupportedProvider,
 } from '@0x/asset-swapper';
-import { getContractAddressesForChainOrThrow } from '@0x/contract-addresses';
+import { getContractAddressesForChainOrThrow } from '@emdx-dex/contract-addresses';
 import { Web3Wrapper } from '@0x/dev-utils';
 import * as express from 'express';
 import { Server } from 'http';

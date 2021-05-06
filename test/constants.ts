@@ -1,4 +1,4 @@
-import { ContractAddresses, getContractAddressesForChainOrThrow } from '@0x/contract-addresses';
+import { ContractAddresses, getContractAddressesForChainOrThrow } from '@emdx-dex/contract-addresses';
 import { assetDataUtils, ETH_TOKEN_ADDRESS } from '@0x/order-utils';
 import { ObjectMap } from '@0x/types';
 import { BigNumber } from '@0x/utils';

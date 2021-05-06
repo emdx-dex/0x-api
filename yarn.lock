@@ -155,10 +155,6 @@
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@0x/contract-addresses/-/contract-addresses-5.6.0.tgz#17217f7278245deb20e8dd0d2beb3865ef42c3d7"
 
-"@0x/contract-addresses@^5.8.0":
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/@0x/contract-addresses/-/contract-addresses-5.8.0.tgz#63d8fee1094982b6269af85982f82adcc0a0abde"
-
 "@0x/contract-addresses@^5.9.0":
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/@0x/contract-addresses/-/contract-addresses-5.9.0.tgz#75acddea81b2c3400dc83ae07a300996989ba7cf"
@@ -1220,6 +1216,11 @@
     node-fetch "^2.6.0"
     web3 "1.2.1"
     web3-typescript-typings "^0.10.2"
+
+"@emdx-dex/contract-addresses@^5.8.0-8":
+  version "5.8.0-8"
+  resolved "https://registry.yarnpkg.com/@emdx-dex/contract-addresses/-/contract-addresses-5.8.0-8.tgz#f4a22b1a274e5b216fb77b4c413f54cee3357f4b"
+  integrity sha512-+xQaCjUYrgLY04wGeTk4waFojfUQ51Nt70KO0kApqz35hY/oOJqkY5t4pPCkmAAcRZj9D/qvTvpj48dZ07rnzQ==
 
 "@ethersproject/abi@5.0.0-beta.153":
   version "5.0.0-beta.153"

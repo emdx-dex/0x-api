@@ -14,7 +14,7 @@ import {
     SwapQuoteRequestOpts,
     SwapQuoterOpts,
 } from '@0x/asset-swapper';
-import { ContractAddresses } from '@0x/contract-addresses';
+import { ContractAddresses } from '@emdx-dex/contract-addresses';
 import { WETH9Contract } from '@0x/contract-wrappers';
 import { assetDataUtils, ETH_TOKEN_ADDRESS, SupportedProvider } from '@0x/order-utils';
 import { MarketOperation } from '@0x/types';

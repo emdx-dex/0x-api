@@ -1,5 +1,5 @@
 import { ContractTxFunctionObj, QuoteReport } from '@0x/asset-swapper';
-import { ContractAddresses } from '@0x/contract-addresses';
+import { ContractAddresses } from '@emdx-dex/contract-addresses';
 import { ContractWrappers } from '@0x/contract-wrappers';
 import {
     assetDataUtils,
