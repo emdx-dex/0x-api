@@ -1,5 +1,5 @@
 import { ContractAddresses, getContractAddressesForChainOrThrow } from '@emdx-dex/contract-addresses';
-import { assetDataUtils, ETH_TOKEN_ADDRESS } from '@0x/order-utils';
+import { assetDataUtils, ETH_TOKEN_ADDRESS } from '@emdx-dex/order-utils';
 import { ObjectMap } from '@0x/types';
 import { BigNumber } from '@0x/utils';
 

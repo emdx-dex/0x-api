@@ -1228,6 +1228,21 @@
     ethereum-types "^3.4.0"
     ethers "~4.0.4"
 
+"@emdx-dex/order-utils@^10.4.8-8":
+  version "10.4.8-8"
+  resolved "https://registry.yarnpkg.com/@emdx-dex/order-utils/-/order-utils-10.4.8-8.tgz#39ca997f8ee6683199b459d0d75328190ac349a3"
+  integrity sha512-qzwgSGHzwloGwsQB2mP9pAPDtVEQ/plkviuCIrZ/AukvcdJ+FEqipAhhjBCp8kmHYyDx9v2trjLNGPlcE21VaQ==
+  dependencies:
+    "@0x/assert" "^3.0.19"
+    "@0x/json-schemas" "^5.3.4"
+    "@0x/utils" "^6.1.1"
+    "@0x/web3-wrapper" "^7.2.10"
+    "@emdx-dex/contract-addresses" "^5.5.0-8"
+    "@emdx-dex/contract-wrappers" "^13.10.2-8"
+    ethereumjs-util "^5.1.1"
+    ethers "~4.0.4"
+    lodash "^4.17.11"
+
 "@ethersproject/abi@5.0.0-beta.153":
   version "5.0.0-beta.153"
   resolved "https://registry.yarnpkg.com/@ethersproject/abi/-/abi-5.0.0-beta.153.tgz#43a37172b33794e4562999f6e2d555b7599a8eee"

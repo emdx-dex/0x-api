@@ -3,7 +3,7 @@ import { ONE_SECOND_MS } from '@0x/asset-swapper/lib/src/utils/market_operation_
 import { SignedOrder } from '@0x/connect';
 import { expect, randomAddress } from '@0x/contracts-test-utils';
 import { Web3Wrapper } from '@0x/dev-utils';
-import { assetDataUtils } from '@0x/order-utils';
+import { assetDataUtils } from '@emdx-dex/order-utils';
 import { BigNumber, NULL_ADDRESS } from '@0x/utils';
 import 'mocha';
 import { Connection, Repository } from 'typeorm';

@@ -8,7 +8,7 @@ import {
     generatePseudoRandomSalt,
     getExchangeProxyMetaTransactionHash,
     SupportedProvider,
-} from '@0x/order-utils';
+} from '@emdx-dex/order-utils';
 import { PartialTxParams } from '@0x/subproviders';
 import { ExchangeProxyMetaTransaction, Order, SignedOrder } from '@0x/types';
 import { BigNumber, RevertError } from '@0x/utils';

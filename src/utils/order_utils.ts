@@ -1,6 +1,6 @@
 import { APIOrder, OrderConfigRequest, OrderConfigResponse } from '@0x/connect';
 import { OrderEventEndState } from '@0x/mesh-rpc-client';
-import { assetDataUtils } from '@0x/order-utils';
+import { assetDataUtils } from '@emdx-dex/order-utils';
 import {
     Asset,
     AssetData,

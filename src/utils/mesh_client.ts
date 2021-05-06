@@ -7,7 +7,7 @@ import {
     WSClient,
     WSOpts,
 } from '@0x/mesh-rpc-client';
-import { orderHashUtils } from '@0x/order-utils';
+import { orderHashUtils } from '@emdx-dex/order-utils';
 import * as _ from 'lodash';
 
 import { MESH_ORDERS_BATCH_HTTP_BYTE_LENGTH, MESH_ORDERS_BATCH_SIZE } from '../constants';

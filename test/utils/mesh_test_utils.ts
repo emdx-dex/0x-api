@@ -2,7 +2,7 @@ import { ContractAddresses } from '@emdx-dex/contract-addresses';
 import { DummyERC20TokenContract, WETH9Contract } from '@0x/contracts-erc20';
 import { constants, OrderFactory } from '@0x/contracts-test-utils';
 import { GetOrdersResponse, ValidationResults, WSClient } from '@0x/mesh-rpc-client';
-import { assetDataUtils } from '@0x/order-utils';
+import { assetDataUtils } from '@emdx-dex/order-utils';
 import { Web3ProviderEngine } from '@0x/subproviders';
 import { Order } from '@0x/types';
 import { BigNumber } from '@0x/utils';

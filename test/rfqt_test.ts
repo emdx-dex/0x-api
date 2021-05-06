@@ -6,7 +6,7 @@ import { WETH9Contract } from '@emdx-dex/contract-wrappers';
 import { DummyERC20TokenContract } from '@0x/contracts-erc20';
 import { expect } from '@0x/contracts-test-utils';
 import { BlockchainLifecycle, web3Factory } from '@0x/dev-utils';
-import { signatureUtils } from '@0x/order-utils';
+import { signatureUtils } from '@emdx-dex/order-utils';
 import { Web3ProviderEngine } from '@0x/subproviders';
 import { BigNumber } from '@0x/utils';
 import { Web3Wrapper } from '@0x/web3-wrapper';

@@ -3,7 +3,7 @@ import { DummyERC20TokenContract, WETH9Contract } from '@0x/contracts-erc20';
 import { constants, expect, OrderFactory } from '@0x/contracts-test-utils';
 import { BlockchainLifecycle, web3Factory, Web3ProviderEngine } from '@0x/dev-utils';
 import { OrderEventEndState } from '@0x/mesh-rpc-client';
-import { assetDataUtils, Order, orderHashUtils } from '@0x/order-utils';
+import { assetDataUtils, Order, orderHashUtils } from '@emdx-dex/order-utils';
 import { BigNumber } from '@0x/utils';
 import { Web3Wrapper } from '@0x/web3-wrapper';
 import 'mocha';

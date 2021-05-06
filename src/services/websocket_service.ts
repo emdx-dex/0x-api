@@ -1,5 +1,5 @@
 import { schemas } from '@0x/json-schemas';
-import { assetDataUtils } from '@0x/order-utils';
+import { assetDataUtils } from '@emdx-dex/order-utils';
 import {
     APIOrder,
     AssetProxyId,
