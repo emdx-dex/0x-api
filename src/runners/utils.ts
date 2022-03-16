@@ -23,7 +23,18 @@ export function createDefaultServer(
     app: core.Express,
 ): Server {
     app.use(requestLogger());
-    app.use(cors());
+    const whitelist: Array<String> = process.env.CORS_WHITELIST.split(',');
+    const corsOptions = {
+        origin: function (origin: String, callback: Function) {
+            console.log(origin)
+            if (whitelist.indexOf(origin) !== -1) {
+                callback(null, true);
+            } else {
+            callback('Not allowed by CORS');
+            }
+        }
+    }
+    app.use(cors(corsOptions));
     app.use(bodyParser.json());
 
     const server = createServer(app);
